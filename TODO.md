@@ -28,10 +28,11 @@ Project Description
 - [ ] Delete confirmation for tasks  
 - [ ] Visitors can sign up for an account  
 - [ ] About page is mobile responsive  
-- [ ] create db  
 
 ### In Progress
 
+- [ ] Create Navbar  
+- [ ] create db  
 
 ### Done ✓
 
