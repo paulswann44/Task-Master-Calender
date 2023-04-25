@@ -31,8 +31,10 @@ Project Description
 
 ### In Progress
 
-- [ ] Create Navbar  
+- [ ] Create Navbar:  
+- [ ] Register Page- create forms  
 - [ ] create db  
+- [ ] Login Page- create forms  
 
 ### Done ✓
 

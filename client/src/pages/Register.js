@@ -5,7 +5,7 @@ function Register() {
 
   const handleClick = () => {
     // todo: this will be an axios http request to backend spring boot 
-    alert("Congrats it works")
+    alert("Congrats it works");
   }
 
   return (
@@ -21,7 +21,7 @@ function Register() {
         <input id="password" type="text" placeholder="password" />
         <label htmlFor="verifyPassword">Verify Password</label>
         <input id="verifyPassword" type="text" placeholder="password" />
-        <Button label="Sign-up" onClick={handleClick} />
+        <Button type="primary" label="Sign-up" onClick={handleClick} />
       </form>
     </div>
   )

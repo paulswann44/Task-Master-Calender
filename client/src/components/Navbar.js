@@ -26,3 +26,6 @@ function Navbar(){
 }
 
 export default Navbar;
+
+// Auth:  Home, About, Calender, Profile
+//unAuth: Home, About, Login, Register

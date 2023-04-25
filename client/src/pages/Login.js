@@ -1,6 +1,6 @@
 import Button from "../components/Button";
 import Input from "../components/Input";
-import useState from "react";
+import React, { useState } from 'react';
 
 
 function Login() {
@@ -54,7 +54,7 @@ function Login() {
           <label htmlFor="rememberMe">Remember me</label>
         </div>
 
-        <Button label="Login" onClick={handleLogin} />
+        <Button type="primary" label="Login" onClick={handleLogin} />
       </form>
     </div>
   );

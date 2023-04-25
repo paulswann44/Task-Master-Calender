@@ -1,27 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
 import PropTypes from 'prop-types';
 
-function Input (props){
-    const {type, label, value, onChange, placeholder}= props;
-    return(
-        <label htmlFor={label}>
-            <input 
-            type={type}
-            id={value}
-            label={value}
-            onChange={onChange}
-            placeholder={placeholder}
-            />
-        </label>
-    )
+function Input(props) {
+  const { type, label, value, onChange, placeholder } = props;
+  const inputRef = useRef(null);
+
+  function handleFocus() {
+    inputRef.current.focus();
+  }
+
+  return (
+    <label htmlFor={label}>
+      <input
+        type={type}
+        id={value}
+        ref={inputRef}
+        onChange={onChange}
+        placeholder={placeholder}
+      />
+      <button onClick={handleFocus}>Focus input</button>
+    </label>
+  )
 };
 
-Input.propTypes ={
-    label: PropTypes.string.isRequired,
-    id: PropTypes.string.isRequired,
-    type: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-    onChange: PropTypes.func.isRequired,
+Input.propTypes = {
+  label: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  type: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  onChange: PropTypes.func.isRequired,
+  placeholder: PropTypes.string,
 }
-
 
 export default Input;
