@@ -5,6 +5,7 @@ import About from './pages/About';
 import Navbar from './components/Navbar';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import ErrorMessage from './components/ErrorMessage';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="*" element={<ErrorMessage/>}/>
       </Routes>
     </BrowserRouter>
   );

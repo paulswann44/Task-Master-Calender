@@ -6,12 +6,14 @@ function Navbar(){
         <nav>
             <ul>
                 <li>
+                    {/* convert to NavLinks to reflex active */}
                     <Link to="/">Home</Link>
                 </li>
                 <li>
                     <Link to="/about">About</Link>
                 </li>
                 <li>
+                    {/* maybe use the replace Link attribute when the user signs-in */}
                     <Link to="/login">Login</Link>
                 </li>
                 <li>
