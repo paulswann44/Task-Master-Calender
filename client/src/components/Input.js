@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 function Input(props) {
   const { type, label, value, onChange, placeholder } = props;
+
+  // 
   const inputRef = useRef(null);
 
   function handleFocus() {
@@ -15,10 +17,11 @@ function Input(props) {
         type={type}
         id={value}
         ref={inputRef}
+        // access the DOM element of input to be null
         onChange={onChange}
+        onClick={handleFocus}
         placeholder={placeholder}
       />
-      <button onClick={handleFocus}>Focus input</button>
     </label>
   )
 };

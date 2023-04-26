@@ -12,11 +12,27 @@ function Register() {
     <div className="registration-Container">
       <form>
         <label htmlFor="firstName">First Name:</label>
-        <input id="firstName" type="text" placeholder="First Name" />
-        <label htmlFor="lastName">Last Name</label>
-        <input id="lastName" type="text" placeholder="Last Name" />
+        <input 
+        id="firstName" 
+        type="text" 
+        placeholder="First Name" 
+        />
+
+        <label htmlFor="lastName"> Last Name</label>
+        <input 
+        id="lastName" 
+        type="text" 
+        placeholder="Last Name" 
+        />
+
+
         <label htmlFor="email">Email</label>
-        <input id="email" type="email" placeholder="email@example.com" />
+        <input 
+        id="email" 
+        type="email" 
+        placeholder="email@example.com" 
+        />
+        
         <label htmlFor="password">Password</label>
         <input id="password" type="text" placeholder="password" />
         <label htmlFor="verifyPassword">Verify Password</label>

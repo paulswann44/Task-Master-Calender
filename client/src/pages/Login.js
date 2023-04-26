@@ -3,6 +3,7 @@ import Input from "../components/Input";
 import React, { useState } from 'react';
 
 
+
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -34,6 +35,7 @@ function Login() {
           type="text"
           value={username}
           onChange={handleUsernameChange}
+          placeholder="Enter Email"
         />
 
         <Input
@@ -42,9 +44,11 @@ function Login() {
           type="password"
           value={password}
           onChange={handlePasswordChange}
+          placeholder="Enter Password"
         />
 
         <div>
+          {/* Todo: Add rememberMe Security Config */}
           <input
             id="rememberMe"
             type="checkbox"
